@@ -96,31 +96,10 @@ function criarCaixaCertificado(certificado) {
 
 function preencherCertificados() {
 
-    const tituloPrincipal = document.createElement('h2');
-
-    tituloPrincipal.textContent = "Seção principal";
-    
-    recipientePrincipal.appendChild(tituloPrincipal);
-
-    for (let i = 0; i < certificados.length; i += 2) {
-
-        const secaoDupla = document.createElement('section');
-
-        secaoDupla.className = 'dupla';
-
-        const caixa1 = criarCaixaCertificado(certificados[i]);
-
-        secaoDupla.appendChild(caixa1);
-
-        if (certificados[i + 1]) {
-
-            const caixa2 = criarCaixaCertificado(certificados[i + 1]);
-
-            secaoDupla.appendChild(caixa2);
-        }
-
-        recipientePrincipal.appendChild(secaoDupla);
-    }
+    certificados.forEach( (certificado) => {
+        
+        recipientePrincipal.appendChild(criarCaixaCertificado(certificado));
+    });
 }
 
 document.addEventListener('DOMContentLoaded', preencherCertificados);

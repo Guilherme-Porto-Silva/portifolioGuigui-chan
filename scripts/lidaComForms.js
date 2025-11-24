@@ -30,7 +30,7 @@ async function manusearFormulario(event) {
 
     try {
         
-        const response = await fetch('/api/forms', {// referência presente no flask.py
+        const response = await fetch('/api/forms', {// referência presente no montaEmail.py
 
             method: 'POST',
 
@@ -125,4 +125,5 @@ document.getElementById("enviar").addEventListener("keydown", (evento) => {
 
         responderFormulario(manusearFormulario(evento));
     }
+
 });

@@ -54,6 +54,12 @@ let certificados = [
         descricao1: "Gostaria de compartilhar que recebi uma nova certificação: JavaScript: programando a Orientação a Objetos da empresa Alura!",
         descricao2: "Esse é um dos cursos da plataforma de cursos online Alura, que ensina a usar a programação orientada a objetos em JavaScript.",
         origemImagem: "./imagens/objetosJavaScript.png"
+    },
+    {
+        titulo: "Java: trabalhando com listas e coleções de dados - Alura",
+        descricao1: "Gostaria de compartilhar que recebi uma nova certificação: Java: trabalhando com listas e coleções de dados da empresa Alura!",
+        descricao2: "Esse é um dos cursos da plataforma de cursos online Alura, que ensina a usar a programação orientada a objetos em Java.",
+        origemImagem: "./imagens/listasJava.png"
     }
 ];
 
@@ -109,3 +115,4 @@ function preencherCertificados() {
 }
 
 document.addEventListener('DOMContentLoaded', preencherCertificados);
+

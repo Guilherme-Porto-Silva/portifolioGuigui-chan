@@ -145,7 +145,7 @@ button:focus:hover{ background-color: orange; }
 }
 
 #conteudoDaPagina{
-    background-color: #19286d;
+    background: radial-gradient(circle at 20% 30%, #003366, #000b18 85%);
     height: 101%;
     border: 2px solid aliceblue;
     padding: 15px;
@@ -211,3 +211,4 @@ button:focus:hover{ background-color: orange; }
 
     .grade{ grid-template-columns: 95%; }
 }
+
